@@ -51,6 +51,35 @@ console.log(nome, 'nasceu em', anoNascimento, '.')
 
 console.log(`${nome1} ${sobrenome} tem ${idade} anos pesa ${peso} kg`)
 
+const num1 = 10
+const num2 = 3
 
+console.log(num1 ** num2) //potenciação
+
+console.log(num1 % num2) //resto de divisão
+
+
+//incremento/decremento
+var i
+
+for (i = 1; i<=9; i++){
+    console.log(i)
+}
+
+// parseInt (trabalha com valores inteiror), parseFloat(trabalha com casas decimais), Number, qualquer numero
+
+const num3 = 15
+const num4 = parseInt('5')
+
+console.log(num3 + num4)
+console.log(typeof num3)
+
+const num5 = parseFloat('5.5')
+
+console.log(num3 + num5)
+
+const num6 = Number ('4.4')
+
+console.log(num3 + num6)
 
 
