@@ -83,3 +83,37 @@ const num6 = Number ('4.4')
 console.log(num3 + num6)
 
 
+//alert('Testando o "Alert"')
+
+//window.confirm('Tem certeza que deseja sair da pagina?')
+
+//window.prompt('Digite seu nome:')
+
+//-------Exercicio-------
+
+// let num7 = window.prompt('Digite um numero')
+// let num8 = window.prompt('Digite outro numero')
+
+// num7 = parseFloat(num7)
+// num8 = parseFloat(num8)
+
+// const resultado = num7 + num8
+
+//alert ('O resultado foi:' + resultado);
+
+
+//-----Exercicio2-----
+
+let varA = 'A' //B
+let varB = 'B' //C
+let varC = 'C' //A
+
+[varA, varB, varC] = [varB, varC, varA]
+
+console.log(varA, varB, varC)
+
+
+
+
+
+
