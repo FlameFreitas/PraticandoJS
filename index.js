@@ -104,16 +104,44 @@ console.log(num3 + num6)
 
 //-----Exercicio2-----
 
-let varA = 'A' //B
-let varB = 'B' //C
-let varC = 'C' //A
+// let varA = 'A' //B
+// let varB = 'B' //C
+// let varC = 'C' //A
 
-[varA, varB, varC] = [varB, varC, varA]
+// [varA, varB, varC] = [varB, varC, varA]
 
-console.log(varA, varB, varC)
+// console.log(varA, varB, varC)
 
 
 
+//               01234567
+let umaString = "Um texto"
+
+//ver localidade especifica
+console.log(umaString [5])
+
+//trocar letras
+console.log(umaString.replace(/t/g, 'r'))
+
+
+//ver tamanho da string
+console.log(umaString.length)
+
+//fatear parte do texto
+console.log(umaString.slice(3,8))
+
+
+//Começa a contar da frente para tras
+console.log(umaString.slice(-3))
+
+//começa a contar de tras para frente
+console.log(umaString.slice(4))
+
+//Letras maiusculas
+console.log(umaString.toUpperCase)
+
+//Letras minusculas
+console.log(umaString.toLowerCase)
 
 
 
