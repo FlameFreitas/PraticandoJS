@@ -143,5 +143,73 @@ console.log(umaString.toUpperCase)
 //Letras minusculas
 console.log(umaString.toLowerCase)
 
+let num8 = 82.5789989019
+let num9 = 2.5
+
+//Concatenação
+//console.log(num8.toString() + num9)
+
+//Converter variavel para String
+//num8 = num8.toString()
+
+//Apresentar numeros binários
+//console.log(num8.toString(2))
+
+//Arredondar casas decimais de numeros grandes, (o numero dentro do parenteses é o numero de casas decimais)
+console.log(num8.toFixed(2))
+
+//informar se é um valor inteiro ou não (true or false)
+console.log(Number.isInteger(num8))
+
+//Verificar se é NaN
+temp = num8 * 'Hello'
+console.log(Number.isNaN(temp))
+
+
+let num10 = 9.45589
+
+//Arredonda o numero para baixo
+// let num11 = Math.floor(num10)
+
+//Arredonda o numero para cima
+// let num11 = Math.ceil(num10)
+
+//Arredonda para o mais proximo
+// let num11 = Math.round(num10)
+
+// console.log(num11)
+
+
+//Pegar o maior numero da sequencia
+console.log(Math.max(1,4,5,8000,-50000,20,-30,-19,-40))
+
+//Pegar o menor numero da sequencia
+console.log(Math.min(1,4,5,8000,-50000,20,-30,-19,-40))
+
+//Gerar numero aleatório
+console.log(Math.random())
+
+
+//Exercicio index
+const numero = prompt ('Digite um numero:')
+const numeroTItulo = document.getElementById('numero-titulo')
+const TextoTitulo = document.getElementById('texto')
+const numeroInteiro = document.getElementById('numero-inteiro')
+
+numeroTItulo.innerHTML = numero
+
+
+
+//Questões
+TextoTitulo.innerHTML = ''
+TextoTitulo.innerHTML += `<p> Raiz Quadrada: ${numero ** 0.5}.</p>`;
+TextoTitulo.innerHTML += `<p> O numero é inteiro?: ${Number.isInteger(numero)}.</p>`;
+TextoTitulo.innerHTML += `<p> é NaN?: ${Number.isNaN(numero)}.</p>`;
+TextoTitulo.innerHTML += `<p> Arredonda para baixo: ${Math.floor(numero)}.</p>`;
+TextoTitulo.innerHTML += `<p> Arredonda para cima: ${Math.ceil(numero)}.</p>`;
+TextoTitulo.innerHTML += `<p> Com duas casas decimais: ${numero.toFixed(2)}.</p>`;
+
+
+
 
 
