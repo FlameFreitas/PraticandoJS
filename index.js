@@ -191,24 +191,87 @@ console.log(Math.random())
 
 
 //Exercicio index
-const numero = prompt ('Digite um numero:')
-const numeroTItulo = document.getElementById('numero-titulo')
-const TextoTitulo = document.getElementById('texto')
-const numeroInteiro = document.getElementById('numero-inteiro')
+// const numero = prompt ('Digite um numero:')
+// const numeroTItulo = document.getElementById('numero-titulo')
+// const TextoTitulo = document.getElementById('texto')
+// const numeroInteiro = document.getElementById('numero-inteiro')
 
-numeroTItulo.innerHTML = numero
+// numeroTItulo.innerHTML = numero
 
 
 
 //Questões
-TextoTitulo.innerHTML = ''
-TextoTitulo.innerHTML += `<p> Raiz Quadrada: ${numero ** 0.5}.</p>`;
-TextoTitulo.innerHTML += `<p> O numero é inteiro?: ${Number.isInteger(numero)}.</p>`;
-TextoTitulo.innerHTML += `<p> é NaN?: ${Number.isNaN(numero)}.</p>`;
-TextoTitulo.innerHTML += `<p> Arredonda para baixo: ${Math.floor(numero)}.</p>`;
-TextoTitulo.innerHTML += `<p> Arredonda para cima: ${Math.ceil(numero)}.</p>`;
-TextoTitulo.innerHTML += `<p> Com duas casas decimais: ${numero.toFixed(2)}.</p>`;
+// TextoTitulo.innerHTML = ''
+// TextoTitulo.innerHTML += `<p> Raiz Quadrada: ${numero ** 0.5}.</p>`;
+// TextoTitulo.innerHTML += `<p> O numero é inteiro?: ${Number.isInteger(numero)}.</p>`;
+// TextoTitulo.innerHTML += `<p> é NaN?: ${Number.isNaN(numero)}.</p>`;
+// TextoTitulo.innerHTML += `<p> Arredonda para baixo: ${Math.floor(numero)}.</p>`;
+// TextoTitulo.innerHTML += `<p> Arredonda para cima: ${Math.ceil(numero)}.</p>`;
+// TextoTitulo.innerHTML += `<p> Com duas casas decimais: ${numero.toFixed(2)}.</p>`;
 
+
+//Arrays
+
+//Indices       0        1       2       3      (Similar a questão de indices anteriores, onde cada indice era uma letra)
+const nomes = ['Luiza', 'Luiz', 'Hugo', 'Vitor']
+
+console.log(nomes)
+
+//Altera valor de Array de acordo com o indice
+nomes[0] = 'Fernanda'
+
+console.log(nomes)
+
+//Adiciona Arrays no fim
+nomes[nomes.length] = 'Fabiana'
+nomes[nomes.length] = 'Fabiano'
+nomes[nomes.length] = 'Maria'
+
+console.log(nomes)
+
+//Adiciona Arrays no fim
+nomes.push('Luana')
+nomes.push('Dione')
+
+console.log(nomes)
+
+//Adiciona Arrays no começo
+nomes.unshift('Felipe')
+nomes.unshift('Tais')
+
+console.log(nomes)
+
+//Remove o ultimo da lista
+nomes.pop()
+
+//Armazena o ultimo Array removido da lista
+
+const removido1 = nomes.pop()
+
+console.log(nomes)
+console.log(removido1)
+
+//Remove o primeiro indice
+nomes.shift()
+
+//Armazena o primeiro Array removido
+const removido2 = nomes.shift()
+
+console.log(nomes)
+console.log(removido2)
+
+//Deletar o valor de um indice especifico
+
+delete nomes[1]
+
+console.log(nomes)
+
+//Fatear Arrays
+
+console.log(nomes.slice(0,3))
+
+console.log(typeof nomes)
+console.log(nomes instanceof Array)
 
 
 
