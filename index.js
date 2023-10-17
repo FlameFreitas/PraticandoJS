@@ -334,5 +334,41 @@ pessoa4.incrementaIdade()
 
     console.log(`após 1 ano ele tera ${pessoa4.idade}`)
 
+//Exercicio 3
+
+function formulario(){
+    const form = document.querySelector('.form')
+    const resultado1 = document.querySelector('.resultado')
+    const pessoas = []
+
+    // form.onsubmit = function(evento){
+    //     evento.preventDefault();
+    //     console.log("Enviado")
+    // };
+
+    function recebeEvendo(evento){
+        evento.preventDefault();
+        const nome2 = form.querySelector('.nomeFormulario')
+        const sobrenome1 = form.querySelector('.sobrenomeFormulario')
+        const idade1 = form.querySelector('.idadeFormulario')
+        const altura1 = form.querySelector('.alturaFormulario')
+    }
+
+    pessoas.push({
+        nome2: nome2.value,
+        sobrenome1: sobrenome1.value,
+        idade1: idade1.value,
+        altura1: altura1.value
+    })
+
+    console.log(pessoas)
+    resultado1.innerHTML += `<p>${nome2.value} ${sobrenome1.value}, ${idade1.value} ${altura1.value}</p>`
+
+    form.addEventListener('submit', recebeEvendo())
+}
+
+formulario()
+
+
 
 
