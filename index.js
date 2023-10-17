@@ -62,7 +62,7 @@ console.log(num1 % num2) //resto de divisão
 //incremento/decremento
 var i
 
-for (i = 1; i<=9; i++){
+for (i = 1; i <= 9; i++) {
     console.log(i)
 }
 
@@ -78,7 +78,7 @@ const num5 = parseFloat('5.5')
 
 console.log(num3 + num5)
 
-const num6 = Number ('4.4')
+const num6 = Number('4.4')
 
 console.log(num3 + num6)
 
@@ -118,7 +118,7 @@ console.log(num3 + num6)
 let umaString = "Um texto"
 
 //ver localidade especifica
-console.log(umaString [5])
+console.log(umaString[5])
 
 //trocar letras
 console.log(umaString.replace(/t/g, 'r'))
@@ -128,7 +128,7 @@ console.log(umaString.replace(/t/g, 'r'))
 console.log(umaString.length)
 
 //fatear parte do texto
-console.log(umaString.slice(3,8))
+console.log(umaString.slice(3, 8))
 
 
 //Começa a contar da frente para tras
@@ -181,10 +181,10 @@ let num10 = 9.45589
 
 
 //Pegar o maior numero da sequencia
-console.log(Math.max(1,4,5,8000,-50000,20,-30,-19,-40))
+console.log(Math.max(1, 4, 5, 8000, -50000, 20, -30, -19, -40))
 
 //Pegar o menor numero da sequencia
-console.log(Math.min(1,4,5,8000,-50000,20,-30,-19,-40))
+console.log(Math.min(1, 4, 5, 8000, -50000, 20, -30, -19, -40))
 
 //Gerar numero aleatório
 console.log(Math.random())
@@ -268,11 +268,71 @@ console.log(nomes)
 
 //Fatear Arrays
 
-console.log(nomes.slice(0,3))
+console.log(nomes.slice(0, 3))
 
 console.log(typeof nomes)
 console.log(nomes instanceof Array)
 
+
+//Funções
+
+//Os valores de igualdade dentro do parenteses serão utilizados apenas se não houver atribuição de valores
+//Os valores dentro da função não poderão ser alterados de fora da função
+
+function soma(x = '"O primeiro valor não foi acrescentado"', y = ' "O segundo valor não foi acrescentado"'){
+const resultado = x + y
+return resultado
+}
+
+const resultado = soma(10, 10)
+
+console.log(resultado)
+
+//Objetos
+//Obs.: "Chaves" são para objetos e "Colchetes" para Arrays
+
+const pessoal = {
+nome: 'Hugo',
+sobrenome: 'Rizzo',
+idade: 20
+}
+
+console.log(pessoal.nome)
+
+
+function criaPessoa (nome, sobrenome, idade){
+return{
+nome,
+sobrenome,
+idade
+}}
+
+const pessoa1 = criaPessoa('Hugo', 'Rizzo', 20)
+const pessoa2 = criaPessoa('Felipe', 'Rizzo', 25)
+const pessoa3 = criaPessoa('Tais', 'Rizzo', 30)
+
+
+console.log(pessoa1.nome, pessoa2.sobrenome, pessoa3.idade)
+
+const pessoa4 = {
+    nome: 'Hugo',
+    sobrenome: 'Rizzo',
+    idade: 20,
+
+    fala(){
+    console.log(`${this.nome} ${this.sobrenome} esta falando oi...`)
+    console.log(`Ele tem ${this.idade} anos de idade`)
+},
+
+    incrementaIdade(){
+        ++this.idade
+    }
+}
+
+pessoa4.fala()
+pessoa4.incrementaIdade()
+
+    console.log(`após 1 ano ele tera ${pessoa4.idade}`)
 
 
 
