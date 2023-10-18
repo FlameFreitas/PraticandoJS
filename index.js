@@ -334,17 +334,16 @@ pessoa4.incrementaIdade()
 
     console.log(`após 1 ano ele tera ${pessoa4.idade}`)
 
+
+
+
+    
 //Exercicio 3
 
 function formulario(){
     const form = document.querySelector('.form')
     const resultado1 = document.querySelector('.resultado')
     const pessoas = []
-
-    // form.onsubmit = function(evento){
-    //     evento.preventDefault();
-    //     console.log("Enviado")
-    // };
 
     function recebeEvendo(evento){
         evento.preventDefault();
