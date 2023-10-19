@@ -32,6 +32,26 @@
     color: black;
 }
 
+.barra-de-carregamento {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 4px;
+    background-color: #0078d4; /* Cor de fundo da barra de carregamento */
+    animation: carregamento 5s ease infinite;
+}
+
+@keyframes carregamento {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
 </style>
 <body>
 

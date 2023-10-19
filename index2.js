@@ -56,12 +56,28 @@ botao.addEventListener("click", function(){
 
     if(resultado >= 13698){
         alert('Você possui dinheiro suficiente para comprar esta placa de video!!!!')
+
+    }else if(resultado == 1 || resultado == 7){
+
+        alert('Você descobriu o código secreto!!!! You Are a Hacker, Please click in Ok!'),
+        alert('Você não devia ter clicado em Ok...')
+
+        var barraDeCarregamento = document.createElement("div");
+        barraDeCarregamento.className = "barra-de-carregamento";
+        document.body.appendChild(barraDeCarregamento);
+
+        // Após um atraso (simulando um processo de carregamento), remova a barra de carregamento
+        setTimeout(function() {
+            document.body.removeChild(barraDeCarregamento);
+            alert("Virús aplicado com sucesso, agora você esta sendo observado....");
+        }, 5000); // 2000 milissegundos (2 segundos) como exemplo de tempo de carregamento            
+        
     }else{
         alert('Você infelizmente não possui dinheiro suficiente para comprar esta placa de video ;-;')
-
     }
 
 })
+
 
 
 
