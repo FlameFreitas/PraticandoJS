@@ -41,8 +41,15 @@ console.log (5>= 10 || 10 === 10)
 console.log (!!true)
 
 
+// Valores avaliados em "false no JS" (0, '', "", ``, null, undefined, NaN)
+
+console.log(false && 10 == 10)
+
+console.log(NaN || "" || ''|| `Rizzo Hugo`)
 
 
+
+/*
 // Desenvolver um exercicio para checar se tem dinheiro para comprar uma 4090
 
 //Exercicio
@@ -76,10 +83,7 @@ botao.addEventListener("click", function(){
         alert('Você infelizmente não possui dinheiro suficiente para comprar esta placa de video ;-;')
     }
 
-})
-
-
-
+})*/
 
 
 
