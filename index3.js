@@ -59,52 +59,87 @@ const diaSemana = data4.getDay()
 
 let diaDaSemanaTexto
 
-if(diaSemana === 0){
-    diaDaSemanaTexto = 'Domingo'
-}else if(diaSemana === 1){
-    diaDaSemanaTexto = 'Segunda'
-}else if(diaSemana === 2){
-    diaDaSemanaTexto = 'Terça'
-}else if(diaSemana === 3){
-    diaDaSemanaTexto = 'Quarta'
-}else if(diaSemana === 4){
-    diaDaSemanaTexto = 'Quinta'
-}else if(diaSemana === 5){
-    diaDaSemanaTexto = 'Sexta'
-}else if(diaSemana === 6){
-    diaDaSemanaTexto = 'Sabado'
-}else{
-    diaDaSemanaTexto = 'Data Inválida'
-}
+// if(diaSemana === 0){
+//     diaDaSemanaTexto = 'Domingo'
+// }else if(diaSemana === 1){
+//     diaDaSemanaTexto = 'Segunda'
+// }else if(diaSemana === 2){
+//     diaDaSemanaTexto = 'Terça'
+// }else if(diaSemana === 3){
+//     diaDaSemanaTexto = 'Quarta'
+// }else if(diaSemana === 4){
+//     diaDaSemanaTexto = 'Quinta'
+// }else if(diaSemana === 5){
+//     diaDaSemanaTexto = 'Sexta'
+// }else if(diaSemana === 6){
+//     diaDaSemanaTexto = 'Sabado'
+// }else{
+//     diaDaSemanaTexto = 'Data Inválida'
+// }
 
+
+// switch (diaSemana){
+//     case 0:
+//         diaDaSemanaTexto = 'Domingo'
+//         break
+//     case 1:
+//         diaDaSemanaTexto = 'Segunda'
+//         break
+//     case 2:
+//         diaDaSemanaTexto = 'Terça'
+//         break
+//     case 3:
+//         diaDaSemanaTexto = 'Quarta'
+//         break
+//     case 4:
+//         diaDaSemanaTexto = 'Quinta'
+//         break
+//     case 5:
+//         diaDaSemanaTexto = 'Sexta'
+//         break
+//     case 6:
+//         diaDaSemanaTexto = 'Sábado'
+//         break
+//         default:
+//             diaDaSemanaTexto = ''
+//             break
+// }
+
+
+//Agora em função
+
+function getWeekText (diaSemana){
+    let diaDaSemanaTexto
 
 switch (diaSemana){
-    case 0:
-        diaDaSemanaTexto = 'Domingo'
-        break
-    case 1:
-        diaDaSemanaTexto = 'Segunda'
-        break
-    case 2:
-        diaDaSemanaTexto = 'Terça'
-        break
-    case 3:
-        diaDaSemanaTexto = 'Quarta'
-        break
-    case 4:
-        diaDaSemanaTexto = 'Quinta'
-        break
-    case 5:
-        diaDaSemanaTexto = 'Sexta'
-        break
-    case 6:
-        diaDaSemanaTexto = 'Sábado'
-        break
-        default:
-            diaDaSemanaTexto = ''
+     case 0:
+         diaDaSemanaTexto = 'Domingo'
+         break
+     case 1:
+         diaDaSemanaTexto = 'Segunda'
+         break
+     case 2:
+         diaDaSemanaTexto = 'Terça'
+         break
+     case 3:
+         diaDaSemanaTexto = 'Quarta'
+         break
+     case 4:
+         diaDaSemanaTexto = 'Quinta'
+         break
+     case 5:
+         diaDaSemanaTexto = 'Sexta'
+         break
+     case 6:
+         diaDaSemanaTexto = 'Sábado'
+         break
+         default:
+             diaDaSemanaTexto = ''
+             break
+}
+    
 }
 
-console.log(diaSemana)
-console.log(diaDaSemanaTexto)
+console.log(diaSemana, diaDaSemanaTexto)
 
 
