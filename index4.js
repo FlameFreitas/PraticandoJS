@@ -18,4 +18,3 @@ console.log(nome, sobrenome, idade, endereco)
 
 
 
-
