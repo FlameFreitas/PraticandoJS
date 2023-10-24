@@ -167,9 +167,29 @@ if (verdadeira) {
 
 const array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-const [p1, , p3, , p5] = array1
+const [p1, , p3, , p5, ...resto] = array1
 
 console.log(array1[4])
-console.log()
+console.log(p1, p3, p5)
+console.log(resto)
+
+//               lista 1    lista 2    lista 3
+//               0  1  2    3  4  5    6  7  8
+const array2 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+const [lista1, lista2, lista3] = array2
+
+console.log(lista1, lista2, lista3)
+console.log(lista1[0], lista2[1], lista3[2])
+
+
+//--------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
 
 
