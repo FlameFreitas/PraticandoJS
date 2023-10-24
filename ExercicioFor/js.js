@@ -12,8 +12,10 @@ const div = document.createElement('div')
 
 let i
 
-for (i = 0; i < elementos.length(); i++) {
-    console.log(elementos[i])
+for (i = 0; i < elementos.length; i++) {
+    let { tag, texto } = elementos[i]
+
+    console.log(tag, texto)
 }
 
 
