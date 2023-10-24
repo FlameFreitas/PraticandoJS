@@ -14,8 +14,11 @@ let i
 
 for (i = 0; i < elementos.length; i++) {
     let { tag, texto } = elementos[i]
-
-    console.log(tag, texto)
+    let tagCriada = document.createElement(tag)
+    tagCriada.innerHTML = texto
+    div.appendChild(tagCriada)
 }
+
+container.appendChild(div)
 
 
