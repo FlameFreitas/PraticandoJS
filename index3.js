@@ -146,3 +146,30 @@ dayFromWeekText = getWeekText(diaSemana)
 console.log(diaSemana, dayFromWeekText)
 
 
+
+
+
+// -------------------------------------------------------------------------------------------------------
+
+const verdadeira = true
+
+var nome = 'Bruno'
+
+
+
+if (verdadeira) {
+    let nome = 'Hugo'
+
+    console.log(nome)
+}
+
+// -------------------------------------------------------------------------------------------------------
+
+const array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+const [p1, , p3, , p5] = array1
+
+console.log(array1[4])
+console.log()
+
+
