@@ -1,49 +1,16 @@
-const form = document.querySelector('#formulario')
+const paragrafos = document.querySelector('.paragrafos')
+const ps = document.querySelectorAll('p')
 
-form.addEventListener('submit', function(event){
-    event.preventDefault()
+const bkColorBd = getComputedStyle(document.body)
 
-    const  inPeso = event.target.querySelector('#peso')
-    const  inAltura = event.target.querySelector('#altura')
+const bkColor = bkColorBd.backgroundColor
 
-    const peso = Number(inPeso.value)
-    const altura = Number(inAltura.value)
+console.log(bkColor)
 
-})
+let i
 
-function setResultado (peso, altura){
-const resultado = document.querySelector('#resultado')
+for (i of ps) {
 
-calculoImc = peso/ altura ** 2
-resultado.toFixed(2);
-
-const p = createP()
-
-if(calculoImc >= 39.9){
-    resultado.innerHTML += 'Abaixo do peso'
-}else if(calculoImc >= 34.9){
-    resultado.innerHTML += 'Peso normal'
-}else if(calculoImc >= 29.9){
-    resultado.innerHTML += 'Peso normal'
-}else if(calculoImc >= 24.9){
-    resultado.innerHTML += 'Peso normal'
-}else if(calculoImc < 18.5){
-    resultado.innerHTML += 'Peso normal'
-}else{
-    resultado.innerHTML += 'Resultado inválido'
-}
-
-if(isValid) {
-    p.classList.add('paragrafo-resultado')
-}else{
-    p.classList.add('bad')
-}
-
-resultado.appendChild(p)
-}
-
-
-function createP(){
-    const p = document.createElement('p')
-return p
+    i.style.backgroundColor = bkColor
+    i.style.color = "White  "
 }

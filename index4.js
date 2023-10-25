@@ -69,6 +69,19 @@ Bugatti.forEach(function (valores, indices, array) {
 
 })
 
+//Laços While
+
+let o = 0
+
+while (o <= 10) {
+    console.log(o)
+}
+
+
+
+
+
+
 
 
 
