@@ -64,8 +64,8 @@ for (y of Bugatti) {
 
 console.log('----------------------------------------------')
 
-Bugatti.forEach(function (elementos) {
-    console.log(elementos)
+Bugatti.forEach(function (valores, indices, array) {
+    console.log(valores, indices, array)
 
 })
 
