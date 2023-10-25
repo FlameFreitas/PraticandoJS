@@ -30,3 +30,19 @@ for (i in frutas) {
     console.log(frutas[i])
 }
 
+
+const McLaren = {
+
+    motor: '5.0 Biturbo',
+    portas: 'Para cima',
+    rodas: 'Cromadas',
+    preço: 1000000,
+    ano: 2024
+}
+
+let key
+
+for (key in McLaren) {
+    console.log(key, McLaren[key])
+}
+
