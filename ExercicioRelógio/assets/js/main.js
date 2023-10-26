@@ -1,35 +1,48 @@
+function getTime(segundos) {
+    const data = new Date(segundos * 1000)
+    return data.toLocaleTimeString('pt-BR', {
+        hour12: false,
+        timeZone: 'GMT'
+    })
+}
+
 const relogio = document.querySelector('.relogio')
 const iniciar = document.querySelector('.iniciar')
 const pausar = document.querySelector('.pausar')
 const zerar = document.querySelector('.zerar')
 
 
-let tempoDecorrido = 0;
-let intervalId;
+let segundos = 0
 
-function atualizarTimer() {
-    tempoDecorrido++;
-    document.querySelector('.relogio').textContent = `Tempo decorrido: ${tempoDecorrido} segundos`;
+let timer
+
+function StartClock() {
+    timer = setInterval(function () {
+        segundos++
+        relogio.innerHTML = getTime(segundos)
+    }, 1000)
 }
 
-document.querySelector('.iniciar').addEventListener("click", function () {
-    intervalId = setInterval(atualizarTimer, 1000);
-    document.querySelector('.inicia').disabled = true;
-    document.querySelector('.pausar').disabled = false;
-    document.querySelector('.zerar').disabled = false;
-});
+document.addEventListener('click', function (e) {
+    const el = e.target
 
-document.querySelector('.pausar').addEventListener("click", function () {
-    clearInterval(intervalId);
-    document.querySelector('.iniciar').disabled = false;
-    document.querySelector('.pausar').disabled = true;
-});
+    if (el.classList.contains('zerar')) {
+        relogio.classList.remove('pausado')
+        clearInterval(timer)
+        relogio.innerHTML = '00:00:00'
+        segundos = 0
+    }
+    if (el.classList.contains('iniciar')) {
+        relogio.classList.remove('pausado')
+        clearInterval(timer)
+        StartClock()
+    }
+    if (el.classList.contains('pausar')) {
+        relogio.classList.add('pausado')
+        clearInterval(timer)
 
-document.querySelector('.zerar').addEventListener("click", function () {
-    clearInterval(intervalId);
-    tempoDecorrido = 0;
-    document.querySelector('.relogio').textContent = "Tempo decorrido: 0 segundos";
-    document.querySelector('.iniciar').disabled = false;
-    document.querySelector('.pausar').disabled
-
+    }
 })
+
+
+
