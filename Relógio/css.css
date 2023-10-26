@@ -3,6 +3,12 @@
     color: white;
 }
 
+.relogio {
+    display: flex;
+    justify-content: center;
+
+}
+
 .titulo {
     font-size: 5em;
 }

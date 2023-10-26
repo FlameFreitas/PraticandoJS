@@ -1,11 +1,14 @@
-const relogio = document.querySelector('.cont')
+const cont = document.querySelector('cont')
 
-const data = new Date()
+function datas() {
+    const data = new Date()
+    data.toLocaleDateString('pt-BR', {
+        hour12: false
+    })
+}
 
 function contTime(event) {
-    relogio.innerHTML = data.toLocaleDateString('pt-BR', {
-        hour12: false,
-    })
+    cont.innerHTML = datas
 
 }
 
