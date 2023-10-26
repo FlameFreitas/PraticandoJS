@@ -55,3 +55,31 @@ try {
 
 
 
+function retornaHora(data) {
+    if (data && !(data instanceof Date)) {
+        throw new TypeError('Esperando uma instancia válida')
+    }
+    if (!data) {
+        data = new Date()
+    }
+
+    return data.toLocaleTimeString('pt-BR', {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false
+    })
+
+}
+
+try {
+    const data = new Date('01-01-2000 20:20:19')
+    const hora = retornaHora()
+    console.log(hora)
+} catch {
+    console.log('Tratando erro...')
+} finally {
+    console.log('Tenha um excelente dia')
+}
+
+
