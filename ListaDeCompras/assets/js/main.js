@@ -51,6 +51,7 @@ document.addEventListener('click', function (e) {
     const el = e.target
     if (el.classList.contains('delete')) {
         el.parentElement.remove()
+        saveWork()
     }
 
 })
@@ -67,7 +68,7 @@ function saveWork() {
         listOfWorks.push(workText)
     }
 
-    const workJSON = JSON.stringfy(listOfWorks)
-    localStorage.setItem('works', workJSON)
+    const worksJSON = JSON.stringify(listOfWorks)
+    localStorage.setItem('works', worksJSON)
 
 }
