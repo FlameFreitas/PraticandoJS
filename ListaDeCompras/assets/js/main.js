@@ -9,7 +9,6 @@ function criaLi() {
 
 inputTarefa.addEventListener('keypress', function (e) {
     if (e.keyCode === 13) {
-        console.log('Enter press')
         if (!inputTarefa.value) return
         criaTarefa(inputTarefa.value)
     }
@@ -72,3 +71,14 @@ function saveWork() {
     localStorage.setItem('works', worksJSON)
 
 }
+
+function addSavedWorks() {
+    const works = localStorage.getItem('works')
+    const listOfWorks = JSON.parse(works)
+
+    for (let work of listOfWorks) {
+        criaTarefa(work)
+    }
+
+}
+addSavedWorks()
