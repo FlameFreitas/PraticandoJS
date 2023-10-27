@@ -1,4 +1,4 @@
-const cont = document.querySelector('cont')
+const cont = document.querySelector('.cont')
 
 function datas() {
     const data = new Date()
