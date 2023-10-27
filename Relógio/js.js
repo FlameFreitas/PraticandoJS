@@ -2,14 +2,15 @@ const cont = document.querySelector('.cont')
 
 function datas() {
     const data = new Date()
-    data.toLocaleDateString('pt-BR', {
+    const hora = data.toLocaleTimeString('pt-BR', {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
         hour12: false
     })
+    cont.textContent = hora
 }
 
-function contTime(event) {
-    cont.innerHTML = datas
+setInterval(datas, 1000)
 
-}
-
-
+datas()

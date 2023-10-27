@@ -1,12 +1,15 @@
-.body {
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&display=swap');
+
+
+body {
     background-color: black;
-    color: white;
+    color: deeppink
 }
 
 .relogio {
     display: flex;
     justify-content: center;
-
+    padding: 30px 30px 30px 30px;
 }
 
 .titulo {
@@ -14,5 +17,6 @@
 }
 
 .cont {
-    font-size: 5em;
+    font-size: 10em;
+    font-family: 'EB Garamond', serif;
 }
