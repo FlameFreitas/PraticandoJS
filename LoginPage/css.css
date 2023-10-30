@@ -1,6 +1,35 @@
-.formulario {
-    display: flex;
-    justify-content: center;
-    border-radius: 5%;
+body {
+    background-color: whitesmoke;
+}
 
+.forms {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid blue;
+    border-style: double;
+    border-width: 5px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.button {
+    text-decoration: none;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.button:hover {
+    transition: 0.5s;
+    background-color: white;
+    color: black;
 }

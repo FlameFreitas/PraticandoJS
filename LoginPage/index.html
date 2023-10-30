@@ -11,30 +11,47 @@
 
 <body>
 
-    <h2>Registro</h2>
-    <form class="formulario" id="form" method="POST">
-        <!-- Campos de entrada -->
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
+    <div class="forms">
+        <div>
+            <h2>Registro</h2>
+        </div>
+        <form id="form" method="POST">
+            <div>
+                <br><br>
+                <!-- Campos de entrada -->
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div>
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <br><br>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <div>
+                <br><br>
+                <!-- Caixa de seleção (select) -->
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo">
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="senha">Senha:</label>
-        <input type="password" id="senha" name="senha" required>
-
-        <!-- Caixa de seleção (select) -->
-        <label for="sexo">Sexo:</label>
-        <select id="sexo" name="sexo">
-            <option value="masculino">Masculino</option>
-            <option value="feminino">Feminino</option>
-            <option value="outro">Outro</option>
-        </select>
-
-        <!-- Botões -->
-        <button type="submit">Enviar</button>
-    </form>
-
+            <div>
+                <br><br>
+                <!-- Botões -->
+                <button class="button" type="submit" id="botaoEnviar">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <script src="Js.js"></script>
 </body>
+
 
 </html>
