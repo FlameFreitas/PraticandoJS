@@ -38,23 +38,27 @@ botaoEnviar.addEventListener("click", function () {
 
 // Login
 
-const botaoLogin = document.getElementById("botaoLogar")
+const botaoLogin = document.getElementById("botaoLogar");
 
 botaoLogin.addEventListener("click", function () {
     const emailLogin = document.getElementById("emailLogin").value;
     const senhaLogin = document.getElementById("senhaLogin").value;
+
+    if (!emailLogin || !senhaLogin) {
+        alert("Preencha o email e a senha antes de fazer o login.");
+        return;
+    }
 
     const userData = JSON.parse(localStorage.getItem(emailLogin));
 
     if (userData) {
         if (userData.senha === senhaLogin) {
             alert("Login bem-sucedido!");
+            // Você pode redirecionar o usuário ou executar outras ações após o login bem-sucedido.
         } else {
             alert("Senha incorreta. Tente novamente.");
         }
     } else {
         alert("Email não encontrado. Verifique seu email e tente novamente.");
     }
-
-})
-
+});
