@@ -54,7 +54,6 @@ botaoLogin.addEventListener("click", function () {
     if (userData) {
         if (userData.senha === senhaLogin) {
             alert("Login bem-sucedido!");
-            // Você pode redirecionar o usuário ou executar outras ações após o login bem-sucedido.
         } else {
             alert("Senha incorreta. Tente novamente.");
         }
