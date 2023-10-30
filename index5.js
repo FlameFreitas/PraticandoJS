@@ -83,3 +83,13 @@ try {
 }
 
 
+
+
+const message = "testanto output"
+
+const outputElement = document.getElementById("output")
+
+outputElement.innerHTML = message
+
+
+
