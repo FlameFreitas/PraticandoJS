@@ -25,3 +25,4 @@ console.log(triplica(3))
 console.log(quadriplica(4))
 
 
+
