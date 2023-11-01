@@ -13,13 +13,37 @@ formulario.addEventListener("submit", function (event) {
 
     const nome = document.getElementById("nome").value
     const sobrenome = document.getElementById("sobrenome").value
-    const idade = document.getElementById("idade").idade
-
+    const idade = document.getElementById("idade").value
 
     const p = document.createElement("p")
     p.innerHTML += `<p>Nome: ${nome}</p> <p>Sobrenome: ${sobrenome}</p> <p>Idade: ${idade}</p>`
 
 
+    //botão Editar
+    const btnEditar = document.createElement("button")
+    btnEditar.addEventListener("click", function () {
+        const novoForm = document.createElement("form")
+
+        const novoInput = document.createElement("input")
+        novoInput.value = nome
+
+        novoForm.appendChild(novoInput)
+
+    })
+
+    //Botão excluir
+
+    const btnDelete = document.createElement("button")
+
+    btnDelete.addEventListener("click", function () {
+
+        container.removeChild(p)
+
+    })
+
+
+    p.appendChild(btnEditar)
+    p.appendChild(btnDelete)
     container.appendChild(p)
 
 })
