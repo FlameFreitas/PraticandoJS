@@ -5,9 +5,6 @@ const dados = document.getElementById("submit").value
 
 
 
-
-
-
 formulario.addEventListener("submit", function (event) {
     event.preventDefault()
 
@@ -57,6 +54,7 @@ formulario.addEventListener("submit", function (event) {
         container.removeChild(p)
 
     })
+
 
     p.appendChild(btnEditar)
     p.appendChild(btnDelete)
