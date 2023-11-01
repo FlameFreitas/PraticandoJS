@@ -15,9 +15,10 @@ formulario.addEventListener("submit", function (event) {
     const sobrenome = document.getElementById("sobrenome").value
     const idade = document.getElementById("idade").idade
 
+
     const p = document.createElement("p")
-    p.textContent = `<p>Nome: ${nome}</p> <p>Sobrenome: ${sobrenome}</p> <p>Idade: ${idade}</p>`
-    p.textContent = `Sobrenome: ${sobrenome}`
+    p.innerHTML += `<p>Nome: ${nome}</p> <p>Sobrenome: ${sobrenome}</p> <p>Idade: ${idade}</p>`
+
 
     container.appendChild(p)
 
