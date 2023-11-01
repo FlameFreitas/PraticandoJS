@@ -24,23 +24,39 @@ formulario.addEventListener("submit", function (event) {
     btnEditar.addEventListener("click", function () {
         const novoForm = document.createElement("form")
 
-        const novoInput = document.createElement("input")
-        novoInput.value = nome
+        const novoInputNome = document.createElement("input")
+        novoInputNome.value = nome
+        novoForm.appendChild(novoInputNome)
 
-        novoForm.appendChild(novoInput)
+
+        const novoInputSobrenome = document.createElement("input")
+        novoInputNome.value = sobrenome
+        novoForm.appendChild = (novoInputSobrenome)
+
+        const novoInputIdade = document.createElement("input")
+        novoInputIdade.value = idade
+        novoForm.appendChild = (novoInputIdade)
+
+        const btnSalvar = document.createElement("button")
+        btnSalvar.textContent = "Salvar Dados"
+        btnSalvar.addEventListener("click", function () {
+
+
+        })
+
+        novoForm.appendChild(btnSalvar)
+
+        container.replaceChild(novoForm, p)
 
     })
 
     //Botão excluir
-
     const btnDelete = document.createElement("button")
-
+    btnDelete.textContent = "Excluir Dados"
     btnDelete.addEventListener("click", function () {
-
         container.removeChild(p)
 
     })
-
 
     p.appendChild(btnEditar)
     p.appendChild(btnDelete)
