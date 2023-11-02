@@ -4,7 +4,7 @@ const operacao = document.getElementById("operacao").value;
 const resultado = document.getElementById("resultado");
 
 function calculo() {
-    var result;
+    let result;
 
     if (operacao === "+") {
         result = numero1 + numero2;
