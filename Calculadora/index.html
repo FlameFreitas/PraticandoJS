@@ -22,20 +22,19 @@
         <br><br>
         <h1>Escolha a operação desejada</h1>
         <br><br>
-        <section>
-            <ul>
-                <h1>Operação</h1>
-                <li>+</li>
-                <li>-</li>
-                <li>/</li>
-                <li>*</li>
-            </ul>
-        </section>
+        <label for="operacao">Selecione a operação desejada</label>
+        <select name="operacao" id="operacao">
+            <option value="select">Selecione a Operação</option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+            <option value="*">*</option>
+        </select>
 
         <p>
-            <button onclick="">=</button>
+            <button onclick="resultadoFinal()">=</button>
         </p>
-
+        <br><br><br>
         <h1 id="resultado"></h1>
 
     </div>
