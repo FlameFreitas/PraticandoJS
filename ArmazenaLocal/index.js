@@ -13,17 +13,17 @@ enviaDados.addEventListener("click", function () {
 
         alert("Por favor preencha todos os campos fornecidos");
         return;
-    }
+    };
 
-    const userData = {
+    const dados = {
         nome: nome,
         sobrenome: sobrenome,
         idade: idade,
-        CPF: CPF;
-    }
+        CPF: CPF
+    };
 
     try {
-        localStorage.setItem(JSON.stringify(userData));
+        localStorage.setItem("Dados armazenados", JSON.stringify(dados));
         alert("Dados armazenados com sucesso");
     } catch (error) {
         alert("Ocorreu um erro ao salvar os dados. Tente novamente.");
