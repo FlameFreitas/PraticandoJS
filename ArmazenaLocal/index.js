@@ -15,11 +15,20 @@ enviaDados.addEventListener("click", function () {
         return;
     }
 
+    const userData = {
+        nome: nome,
+        sobrenome: sobrenome,
+        idade: idade,
+        CPF: CPF;
+    }
 
-
-
-})
-
+    try {
+        localStorage.setItem(JSON.stringify(userData));
+        alert("Dados armazenados com sucesso");
+    } catch (error) {
+        alert("Ocorreu um erro ao salvar os dados. Tente novamente.");
+    }
+});
 
 
 
