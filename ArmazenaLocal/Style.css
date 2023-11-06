@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,200&display=swap');
+
+
 body {
     background-image: linear-gradient(to right, blueviolet, 80%, violet);
 
@@ -14,6 +17,7 @@ body {
     text-decoration: none;
     text-align: center;
     font-size: 18px;
+    font-family: 'Noto Serif', serif;
 }
 
 
@@ -25,4 +29,5 @@ body {
     font-size: 13px;
     border-radius: 5px;
     box-shadow: 5px;
+    font-family: 'Noto Serif', serif;
 }
