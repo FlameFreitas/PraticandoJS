@@ -5,25 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro - Para armazenar dados pessoais</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="reset.css">
 </head>
 
 <body>
+    <div class="divs">
+        <form id="form" method="POST" class="form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome">
+            <br>
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome">
+            <br>
+            <label for="idade">Idade:</label>
+            <input type="text" id="idade">
+            <br>
+            <label for="cpf">CPF:</label>
+            <input type="text" id="CPF">
+    </div>
 
-    <form id="form" method="POST">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome">
-        <br>
-        <label for="sobrenome">Sobrenome:</label>
-        <input type="text" id="sobrenome">
-        <br>
-        <label for="idade">Idade:</label>
-        <input type="text" id="idade">
-        <br>
-        <label for="cpf">CPF:</label>
-        <input type="text" id="CPF">
-
-        <button id="enviaDados">Enviar Dados para Local Storage</button>
-
+    <button id="enviaDados">Enviar Dados para Local Storage</button>
     </form>
 
 

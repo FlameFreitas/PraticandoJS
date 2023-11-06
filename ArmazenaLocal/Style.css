@@ -1,0 +1,18 @@
+body {
+    background-image: linear-gradient(to right, blueviolet, 80%, violet);
+
+}
+
+
+.divs {
+    display: flex;
+    width: 100px;
+
+}
+
+.form {
+    text-decoration: none;
+    border-radius: 20px;
+
+
+}
