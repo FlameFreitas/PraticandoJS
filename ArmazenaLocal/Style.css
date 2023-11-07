@@ -23,15 +23,25 @@ body {
 
 
 .botao {
-    text-decoration: none;
-    text-align: center;
-    font-size: 18px;
-    text-decoration: none;
-    font-size: 13px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
     border-radius: 5px;
-    box-shadow: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    transition: 0.5s;
     font-family: 'Noto Serif', serif;
 }
 
-
-.
+.botao:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
