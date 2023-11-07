@@ -11,6 +11,7 @@ body {
     display: flex;
     width: 100px;
     margin: 0 auto;
+    padding: 10% 25% 10% 25%;
 }
 
 .form {
@@ -31,3 +32,6 @@ body {
     box-shadow: 5px;
     font-family: 'Noto Serif', serif;
 }
+
+
+.
