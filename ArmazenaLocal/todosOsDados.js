@@ -33,7 +33,7 @@ imprimirTodosOsDados.addEventListener("click", function () {
             p.appendChild(cpfElement);
 
             const spacoElement = document.createElement("p");
-            spacoElement.innerText = `----------------------`;
+            spacoElement.innerHTML = `<p>----------------------</p> <br>`;
             p.appendChild(spacoElement);
 
             container.appendChild(p);
