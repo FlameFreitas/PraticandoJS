@@ -1,4 +1,3 @@
-
 const enviaDados = document.getElementById("enviaDados");
 
 enviaDados.addEventListener("click", function () {
@@ -31,6 +30,15 @@ enviaDados.addEventListener("click", function () {
 });
 
 
+const imprimirTodosOsDados = document.getElementById("imprimirTodosOsDados")
+
+var imprimirDados = window.localStorage.getItem('dados')
+
+imprimirTodosOsDados.addEventListener("click", function () {
+    console.log(window.localStorage.getItem('dados'));
+
+
+})
 
 
 
