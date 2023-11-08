@@ -6,53 +6,28 @@ enviaDados.addEventListener("click", function () {
     const idade = document.getElementById("idade").value;
     const CPF = document.getElementById("CPF").value;
 
-    //Vamos verificar se os dados estão preencidos
-
+    // Verifique se todos os campos estão preenchidos
     if (!nome || !sobrenome || !idade || !CPF) {
-
-        alert("Por favor preencha todos os campos fornecidos");
+        alert("Por favor, preencha todos os campos fornecidos");
         return;
-    };
+    }
 
-    const dados = {
+    // Recupere os dados existentes da localStorage (se houver)
+    let dadosArmazenados = JSON.parse(localStorage.getItem("DadosArmazenados")) || [];
+
+    // Crie um novo objeto de dados
+    const novoDados = {
         nome: nome,
         sobrenome: sobrenome,
         idade: idade,
         CPF: CPF
     };
 
-    try {
-        localStorage.setItem("Dados armazenados", JSON.stringify(dados));
-        alert("Dados armazenados com sucesso");
-    } catch (error) {
-        alert("Ocorreu um erro ao salvar os dados. Tente novamente.");
-    }
+    // Adicione o novo conjunto de dados ao array
+    dadosArmazenados.push(novoDados);
 
+    // Salve o array atualizado na localStorage
+    localStorage.setItem("DadosArmazenados", JSON.stringify(dadosArmazenados));
+
+    alert("Dados armazenados com sucesso");
 });
-
-
-
-
-var imprimirItens = localStorage.getItem(dados);
-
-const imprimirTodosOsDados = document.getElementById("imprimirTodosOsDados")
-
-formulario.addEventListener("click", function (event) {
-    event.preventDefault()
-
-    const nome = document.getElementById("nome").value;
-    const sobrenome = document.getElementById("sobrenome").value;
-    const idade = document.getElementById("idade").value;
-    const CPF = document.getElementById("CPF").value;
-
-    const p = document.createElement("p")
-    p.innerHTML += `<p>Nome: ${nome}</p> <p>Sobrenome: ${sobrenome}</p> <p>Idade: ${idade}</p> <p>Idade: ${CPF}</p>`
-
-    container.appendChild(p)
-
-})
-
-
-
-
-
