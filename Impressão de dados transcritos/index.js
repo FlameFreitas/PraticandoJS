@@ -3,8 +3,6 @@ const formulario = document.getElementById("formulario")
 
 const dados = document.getElementById("submit").value
 
-
-
 formulario.addEventListener("submit", function (event) {
     event.preventDefault()
 

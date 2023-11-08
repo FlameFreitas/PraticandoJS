@@ -30,15 +30,28 @@ enviaDados.addEventListener("click", function () {
 });
 
 
+
+
+var imprimirItens = localStorage.getItem(dados);
+
 const imprimirTodosOsDados = document.getElementById("imprimirTodosOsDados")
 
-var imprimirDados = window.localStorage.getItem('dados')
+formulario.addEventListener("click", function (event) {
+    event.preventDefault()
 
-imprimirTodosOsDados.addEventListener("click", function () {
-    console.log(window.localStorage.getItem('dados'));
+    const nome = document.getElementById("nome").value;
+    const sobrenome = document.getElementById("sobrenome").value;
+    const idade = document.getElementById("idade").value;
+    const CPF = document.getElementById("CPF").value;
 
+    const p = document.createElement("p")
+    p.innerHTML += `<p>Nome: ${nome}</p> <p>Sobrenome: ${sobrenome}</p> <p>Idade: ${idade}</p> <p>Idade: ${CPF}</p>`
+
+    container.appendChild(p)
 
 })
+
+
 
 
 
