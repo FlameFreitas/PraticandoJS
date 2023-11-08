@@ -27,6 +27,7 @@ enviaDados.addEventListener("click", function () {
     } catch (error) {
         alert("Ocorreu um erro ao salvar os dados. Tente novamente.");
     }
+
 });
 
 
