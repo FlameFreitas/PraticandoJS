@@ -29,7 +29,7 @@ function criaPessoa(nome, sobrenome, idade, p, a) {
 
 const p1 = criaPessoa('Hugo', 'Rizzo', 20, 80, 1.80)
 const p2 = criaPessoa('Felipe', 'Rizzo', 25, 75, 1.70)
-console.log(p2.imc())
+console.log(p2.imc)
 
 p1.nomeCompleto = 'Tais Rizzo'
 
